@@ -1,0 +1,7 @@
+<h1>UI Labs</h1>
+
+<ul>
+  <li *ngFor="let item of tools" class="tool">{{item.name}}</li>
+</ul>
+
+<button (click)="addTool('New tool')">Add Tool</button>
