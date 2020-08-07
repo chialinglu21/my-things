@@ -28,6 +28,9 @@
     "ui-lab-e2e": {
       "tags": [],
       "implicitDependencies": ["ui-lab"]
+    },
+    "ly-common": {
+      "tags": ["type:lib", "scope:common-lib"]
     }
   }
 }
