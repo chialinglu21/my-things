@@ -1,7 +1,9 @@
 <h1>UI Labs</h1>
 
 <ul>
-  <li *ngFor="let item of tools" class="tool">{{item.name}}</li>
+  <li *ngFor="let item of tools" class="tool">{{ item.name }}</li>
 </ul>
 
-<button (click)="addTool('New tool')">Add Tool</button>
+<button mat-raised-button (click)="addTool('New tool')" color="primary">
+  Add Tool
+</button>

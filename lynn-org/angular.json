@@ -21,8 +21,14 @@
             "polyfills": "apps/ui-lab/src/polyfills.ts",
             "tsConfig": "apps/ui-lab/tsconfig.app.json",
             "aot": true,
-            "assets": ["apps/ui-lab/src/favicon.ico", "apps/ui-lab/src/assets"],
-            "styles": ["apps/ui-lab/src/styles.scss"],
+            "assets": [
+              "apps/ui-lab/src/favicon.ico",
+              "apps/ui-lab/src/assets"
+            ],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "apps/ui-lab/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -80,7 +86,10 @@
               "apps/ui-lab/tsconfig.app.json",
               "apps/ui-lab/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/ui-lab/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/ui-lab/**/*"
+            ]
           }
         },
         "test": {
@@ -115,8 +124,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/ui-lab-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/ui-lab-e2e/**/*"]
+            "tsConfig": [
+              "apps/ui-lab-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/ui-lab-e2e/**/*"
+            ]
           }
         }
       }
