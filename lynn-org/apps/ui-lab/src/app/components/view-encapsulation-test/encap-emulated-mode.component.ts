@@ -10,15 +10,19 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   `,
   styles: [
     `
+      /* :host .highlight-text {
+        background: yellow;
+      }
+      :host(.highlight-text) {
+        background: pink;
+      } */
+
       .title {
         color: blue;
       }
       .title::after {
         content: '(encap-emulated-mode.component)';
       }
-      /* .highlight-text {
-        background: yellow;
-      } */
       :host ::ng-deep .highlight-text {
         background: yellow;
       }
