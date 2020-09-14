@@ -10,7 +10,7 @@
       },
       "root": "apps/ui-lab",
       "sourceRoot": "apps/ui-lab/src",
-      "prefix": "lynn-org",
+      "prefix": "ly",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
