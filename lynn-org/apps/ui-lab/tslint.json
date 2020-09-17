@@ -1,8 +1,8 @@
 {
   "extends": "../../tslint.json",
   "rules": {
-    "directive-selector": [true, "attribute", "lynnOrg", "camelCase"],
-    "component-selector": [true, "element", "lynn-org", "kebab-case"]
+    "directive-selector": [true, "attribute", "ly", "camelCase"],
+    "component-selector": [true, "element", "ly", "kebab-case"]
   },
   "linterOptions": {
     "exclude": ["!**/*"]

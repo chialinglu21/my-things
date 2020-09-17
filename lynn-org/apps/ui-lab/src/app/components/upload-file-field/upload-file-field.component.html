@@ -1,0 +1,33 @@
+<div class="tp-upload-field">
+  <label class="tp-upload-field__label">Upload File</label>
+  <div class="tp-upload-field__file-skin" *ngIf="fileName">
+    <mat-icon class="tp-upload-field__file-skin-icon">attach_file</mat-icon>
+    <span class="gl-subtitle-2 tp-upload-field__file-skin-text">{{
+      fileName
+    }}</span>
+    <button
+      type="button"
+      class="tp-upload-field__file-skin-btn"
+      mat-icon-button
+      matTooltip="Remove file"
+      (click)="onClear()"
+    >
+      <mat-icon>clear</mat-icon>
+    </button>
+  </div>
+  <button
+    type="button"
+    mat-stroked-button
+    class="tp-upload-field__browse"
+    *ngIf="!fileName"
+    (click)="inputFile.click()"
+  >
+    Browse...
+  </button>
+  <input
+    #inputFile
+    type="file"
+    class="tp-upload-field__file-input"
+    (click)="inputFile.value = null"
+  />
+</div>

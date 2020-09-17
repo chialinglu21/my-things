@@ -6,6 +6,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatRadioModule } from '@angular/material/radio';
 import { HttpClientModule } from '@angular/common/http';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @NgModule({
   exports: [
@@ -15,6 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatCheckboxModule,
     MatRadioModule,
     HttpClientModule,
+    MatSlideToggleModule,
+    MatIconModule,
   ],
 })
 export class LyMaterialModule {}

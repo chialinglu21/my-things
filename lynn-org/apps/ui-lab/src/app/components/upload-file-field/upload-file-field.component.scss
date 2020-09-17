@@ -1,0 +1,91 @@
+.tp-upload-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+
+  &__label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+  }
+
+  &__file-skin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    height: 36px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    padding: 8px 8px 8px 0;
+
+    &-icon {
+      width: 16px;
+      height: 16px;
+      margin: 10px 8px;
+      font-size: 16px;
+    }
+
+    &-text {
+      flex: 1;
+      line-height: 20px;
+      letter-spacing: 0.25px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    &-btn {
+      mat-icon {
+        height: 16px;
+        width: 16px;
+        font-size: 16px;
+        line-height: 16px;
+      }
+    }
+  }
+  &__browse {
+    width: 108px;
+  }
+
+  &__file-input {
+    display: none;
+  }
+
+  &__error-message {
+    height: 20px;
+    span {
+      line-height: 20px;
+      letter-spacing: 0.4px;
+    }
+  }
+}
+
+// Theme
+.tp-upload-field {
+  &-error {
+    .tp-upload-field-label {
+      color: red;
+    }
+    .tp-upload-field-file {
+      border-color: red;
+    }
+    &-message-block {
+      span {
+        color: red;
+      }
+    }
+  }
+  &__label {
+    color: #333;
+  }
+
+  &__file-skin {
+    border-color: #aaa;
+    &-icon {
+      color: #aaa;
+    }
+  }
+}
