@@ -1,0 +1,64 @@
+{
+  "editor.fontSize": 14,
+  "files.autoSave": "onFocusChange",
+  "workbench.iconTheme": "material-icon-theme",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "workbench.colorCustomizations": {
+    "[Atom One Dark]": {
+      "activityBar.background": "#009975",
+      "activityBar.foreground": "#d9d872",
+      "activityBar.inactiveForeground": "#58b368",
+      "activityBar.activeBorder": "#d9d872",
+      "activityBarBadge.background": "#d9d872",
+      "activityBarBadge.foreground": "#454d66",
+      "titleBar.activeBackground": "#2a363b",
+      "titleBar.inactiveBackground": "#2a363b",
+      "titleBar.activeForeground": "#fecea8",
+      "titleBar.inactiveForeground": "#ff847c",
+      "statusBar.background": "#454d66",
+      "statusBarItem.hoverBackground": "#009975",
+      "statusBar.foreground": "#d9d872",
+      "editorCursor.background": "#07689f",
+      "editorCursor.foreground": "#ffc93c"
+    }
+  },
+  "workbench.colorTheme": "Atom One Dark",
+  "editor.autoIndent": "keep",
+  "editor.fontFamily": "Fira Code, Monaco, monospace ,SauceCodePro Nerd Font",
+  "editor.fontLigatures": true,
+  "editor.semanticHighlighting.enabled": false,
+  "editor.renderWhitespace": "trailing",
+  "workbench.sideBar.location": "right",
+  "window.zoomLevel": 0,
+  "html.mirrorCursorOnMatchingTag": false,
+  // Vim settings
+  "vim.easymotion": true,
+  "vim.leader": ",",
+  "vim.hlsearch": true,
+  "vim.startInInsertMode": false,
+  "vim.easymotionMarkerHeight": 18,
+  "vim.easymotionMarkerFontWeight": "600",
+  "vim.easymotionMarkerFontFamily": "SauceCodePro Nerd Font",
+  "vim.easymotionDimBackground": true,
+  "vim.easymotionMarkerForegroundColorOneChar": "#fecea8",
+  "vim.easymotionMarkerForegroundColorTwoChar": "#ff847c",
+  // Material icon settings
+  "material-icon-theme.showUpdateMessage": false,
+  "material-icon-theme.activeIconPack": "angular_ngrx",
+  "material-icon-theme.folders.theme": "specific",
+  "material-icon-theme.opacity": 1,
+  // all comments
+  "editor.tokenColorCustomizations": {
+    "comments": "#486451"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.cursorBlinking": "smooth",
+  "editor.formatOnSave": true,
+  //Polacode
+  "polacode.transparentBackground": true,
+  "polacode.shadow": "rgba(0, 0, 0, 0.55) 0px 20px 68px",
+  "polacode.target": "container",
+  "editor.minimap.enabled": false,
+  "editor.formatOnSaveMode": "modifications"
+}
