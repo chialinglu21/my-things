@@ -27,10 +27,6 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-#nvm initialization
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-
 # alias setting
 ## git
 alias delBranch="git branch -d"
@@ -42,12 +38,25 @@ alias 15Commits="git log -15 --oneline"
 alias stash="git stash"
 alias popStash="git stash pop stash@{0}"
 alias lsStash="git stash list"
-alias pull="git pull upstream develop --rebase"
+alias pull="git pull upstream"
 alias push="git push origin"
 alias cko="git checkout"
 alias add="git add ."
+alias allRemote="git remote -v"
+alias allWorktree="git worktree list"
+alias addWorktree="git worktree add "
+alias pruneWorktree="git worktree prune"
+alias preBranch="git checkout -"
 ## others
 alias rmPkg="rm -rf node_modules"
+alias rename_video_to_gif='function rename_video_to_gif(){ ffmpeg -i $1 -pix_fmt rgb8 -r 10 $2.gif && gifsicle -O3 $2.gif -o $2.gif && osascript -e "display notification \"$2.gif successfully converted and saved\" with title \"MOV2GIF SUCCESS!\""};rename_video_to_gif'
+alias mkTypes="cd libs/ui && pnpx sveld && cd ../../"
+
+
+#nvm initialization
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+
 
 # place this after nvm initialization!
 autoload -U add-zsh-hook
