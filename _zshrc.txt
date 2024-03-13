@@ -27,6 +27,7 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+
 # alias setting
 ## git
 alias delBranch="git branch -d"
@@ -35,6 +36,7 @@ alias lcBranch="git branch"
 alias rmBranch="git branch -r"
 alias newBranch="git checkout -b"
 alias 15Commits="git log -15 --oneline"
+alias 30Commits="git log -30 --oneline"
 alias stash="git stash"
 alias popStash="git stash pop stash@{0}"
 alias lsStash="git stash list"
@@ -47,6 +49,7 @@ alias allWorktree="git worktree list"
 alias addWorktree="git worktree add "
 alias pruneWorktree="git worktree prune"
 alias preBranch="git checkout -"
+alias gcp="git cherry-pick"
 ## others
 alias rmPkg="rm -rf node_modules"
 alias rename_video_to_gif='function rename_video_to_gif(){ ffmpeg -i $1 -pix_fmt rgb8 -r 10 $2.gif && gifsicle -O3 $2.gif -o $2.gif && osascript -e "display notification \"$2.gif successfully converted and saved\" with title \"MOV2GIF SUCCESS!\""};rename_video_to_gif'
@@ -70,3 +73,10 @@ load-nvmrc() {
 }
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+export VOLTA_HOME="$HOME/.volta"
+export VOLTA_FEATURE_PNPM=1
+export PATH="$VOLTA_HOME/bin:$PATH"
