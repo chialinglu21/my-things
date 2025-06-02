@@ -1,0 +1,44 @@
+{
+  "workbench.colorTheme": "August - Kanagawa (Darker)",
+  "workbench.sideBar.location": "right",
+  "files.autoSave": "onFocusChange",
+  "editor.fontSize": 14,
+  "editor.tokenColorCustomizations": {
+    "comments": "#486451"
+  },
+  "workbench.colorCustomizations": {
+    "[In Bed by 7pm]": {
+      "tab.unfocusedInactiveForeground": "#b6b5cca1"
+    }
+  },
+  "vim.easymotion": true,
+  "vim.easymotionMarkerForegroundColorOneChar": "#F62F63",
+  "vim.easymotionDimBackground": true,
+  "vim.leader": ",",
+  "vim.hlsearch": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.formatOnSave": true,
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.minimap.renderCharacters": false,
+  "svelte.enable-ts-plugin": true,
+  "github.copilot.enable": {
+    "*": false
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
